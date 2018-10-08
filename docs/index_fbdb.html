@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>Auguston Life Sciences & Fine Chemical PVT.LTD</title>
+
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
+
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-functions.js"></script>
+
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyB9kH_qtPrjVo2SQklVQQzsT0lcQHc3Jj0",
+            authDomain: "augustonlsfc.firebaseapp.com",
+            databaseURL: "https://augustonlsfc.firebaseio.com",
+            projectId: "augustonlsfc",
+            storageBucket: "augustonlsfc.appspot.com",
+            messagingSenderId: "419716890528"
+        };
+        firebase.initializeApp(config);
+        // Get a reference to the database service
+        var database = firebase.database();
+
+
+
+
+        firebase.database().ref('users/123d').set({
+            username: "Devesh Chaudhari",
+            email: "deveshccc"
+        });
+    </script>
+
+</head>
+
+<body>
+
+
+
+
+</body>
+
+</html>
